@@ -164,7 +164,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 563,
+          "id": 5649,
           "text": "true",
           "comments": "",
           "comments_html": "<p>You are correct! <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -172,7 +172,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 3206,
+          "id": 3972,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -221,11 +221,19 @@
           "blank_id": "answer1"
         },
         {
-          "id": 2769,
+          "id": 5668,
+          "text": "true",
+          "comments": "",
+          "comments_html": "<p>You are correct! <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "weight": 100.0,
+          "blank_id": "answer2"
+        },
+        {
+          "id": 2730,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
-          "weight": 100,
+          "weight": 0.0,
           "blank_id": "answer2"
         }
       ],
@@ -335,7 +343,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 8870,
+          "id": 5064,
           "text": "0",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
@@ -376,7 +384,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 1863,
+          "id": "1863",
           "text": "EF",
           "comments": "",
           "comments_html": "",
@@ -384,7 +392,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 2837,
+          "id": "2837",
           "text": "ABC",
           "comments": "",
           "comments_html": "",
@@ -406,8 +414,8 @@
       "assessment_question_id": 521350,
       "position": null,
       "question_name": "String Manipulation",
-      "question_type": "multiple_choice_question",
-      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Which expression compiles and evaluates to true?</p>",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Which expression compiles and evaluates to true? Select all that apply:</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -417,28 +425,28 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 3391,
+          "id": "3391",
           "text": "",
-          "html": "<p>s1.toLowerCase().contains(\"app\")</p>",
           "comments": "",
           "comments_html": "",
-          "weight": 100.0
+          "weight": 100.0,
+          "html": "<p>s1.toLowerCase().contains(\"app\")</p>"
         },
         {
-          "id": 3084,
+          "id": 6419,
           "text": "",
-          "html": "<p>s1.contains(\"apple\") </p>",
           "comments": "",
           "comments_html": "<p>The method <code>contains</code> does a case-sensitive substring search</p>",
-          "weight": 0.0
+          "weight": 0.0,
+          "html": "<p>s1.contains(\"app\") </p>"
         },
         {
-          "id": 3950,
+          "id": "3950",
           "text": "",
-          "html": "<p>s1.contains( \"APP\".toLowerCase() )</p>",
           "comments": "",
           "comments_html": "<p>The method <code>contains</code> does a case-sensitive substring search</p>",
-          "weight": 0.0
+          "weight": 0.0,
+          "html": "<p>s1.contains( \"APP\".toLowerCase() )</p>"
         }
       ],
       "variables": null,
