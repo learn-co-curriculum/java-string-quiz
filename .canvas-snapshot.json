@@ -138,7 +138,7 @@
       "position": null,
       "question_name": "String Equality",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed?</p>\n\n<p>System.out.println(color1 == color2); [answer1]</p>\n\n<p>System.out.println(color1 == color3); [answer2]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println(color1 == color2); [answer1]</p>\n\n<p>System.out.println(color1 == color3); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -151,7 +151,7 @@
           "id": 9663,
           "text": "false",
           "comments": "",
-          "comments_html": "<p>You are correct! The <code>==</code> operator tests if the variables reference the same object in memory.\nVariable <code>color2</code> will reference a new object due to the <code>String</code> constructor call.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "comments_html": "<p>You are correct! <code>color1 == color2</code> tests if the variables reference the same object in memory.\nVariable <code>color2</code> will reference a different object due to the <code>String</code> constructor call.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 100.0,
           "blank_id": "answer1"
         },
@@ -159,23 +159,23 @@
           "id": 6295,
           "text": "true",
           "comments": "",
-          "comments_html": "<p>Sorry, that is incorrect. The <code>==</code> operator tests if the variables reference the same object in memory.\nHowever, <code>color2</code> will reference a new object due to the <code>String</code> constructor call.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "comments_html": "<p>Sorry, that is incorrect. <code>color1 == color2</code> tests if the variables reference the same object in memory.\nVariable <code>color2</code> will reference a different object due to the <code>String</code> constructor call.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 0.0,
           "blank_id": "answer1"
         },
         {
-          "id": 3486,
+          "id": 563,
           "text": "true",
           "comments": "",
-          "comments_html": "<p>You are correct! Since the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "comments_html": "<p>You are correct! <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 100.0,
           "blank_id": "answer2"
         },
         {
-          "id": 6137,
+          "id": 3206,
           "text": "false",
           "comments": "",
-          "comments_html": "<p>Sorry, that is incorrect. Since the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "comments_html": "<p>Sorry, that is incorrect. <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 0.0,
           "blank_id": "answer2"
         }
@@ -193,56 +193,40 @@
       "quiz_group_id": null,
       "assessment_question_id": 521346,
       "position": null,
-      "question_name": "Multiple Answers Question",
-      "question_type": "multiple_answers_question",
-      "question_text": "<p>We have a variable <code>lunch_menu</code>, set equal to an array of lunch menu items:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"pizza\"</span><span class=\"p\">,</span> <span class=\"s2\">\"sandwich\"</span><span class=\"p\">,</span> <span class=\"s2\">\"sushi\"</span><span class=\"p\">,</span> <span class=\"s2\">\"soup\"</span><span class=\"p\">,</span> <span class=\"s2\">\"salad\"</span><span class=\"p\">]</span>\n</code></pre></div>\n<p>Since you're super hungry and super excited about lunch, use the <code>.each</code> method\nto enumerate over the array and output a string to the terminal with each lunch\nmenu item with an <code>\"!\"</code> at the end.</p>\n\n<p>Which piece of code will achieve the desired result? Select all that apply:</p>",
+      "question_name": "String Equality",
+      "question_type": "multiple_dropdowns_question",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println(color1.equals(color2)); [answer1]</p>\n\n<p>System.out.println(color1.equals(color3)); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-constructors\">String Constructors</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 236,
-          "text": "",
+          "id": 5815,
+          "text": "true",
           "comments": "",
-          "comments_html": "<p>Correct! Using <code>each</code> lets us access each element of the array in the block,\nand we can output a string by using <code>puts</code>.</p>",
+          "comments_html": "<p>You are correct! <code>color1.equals(color2)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 100.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"nb\">puts</span> <span class=\"n\">lunch_item</span> <span class=\"o\">+</span> <span class=\"s2\">\"!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
+          "blank_id": "answer1"
         },
         {
-          "id": 9456,
-          "text": "",
+          "id": 523,
+          "text": "false",
           "comments": "",
-          "comments_html": "<p>This code would result in an error, since <code>lunch_menu</code> is an array, and we\ncan't us the <code>+</code> method to add a string to the array. How can we iterate over\neach element?</p>",
+          "comments_html": "<p>Sorry, that is incorrect. <code>color1.equals(color2)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
           "weight": 0.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"nb\">puts</span> <span class=\"n\">lunch_menu</span> <span class=\"o\">+</span> <span class=\"s2\">\"!\"</span>\n</code></pre></div>"
+          "blank_id": "answer1"
         },
         {
-          "id": 2414,
-          "text": "",
+          "id": 2769,
+          "text": "false",
           "comments": "",
-          "comments_html": "<p>Correct! Using <code>each</code> lets us access each element of the array in the block,\nand we can output a string by using <code>puts</code>.</p>",
-          "weight": 100.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"nb\">puts</span> <span class=\"s2\">\"</span><span class=\"si\">#{</span><span class=\"n\">lunch_item</span><span class=\"si\">}</span><span class=\"s2\">!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
-        },
-        {
-          "id": 2003,
-          "text": "",
-          "comments": "",
-          "comments_html": "<p>Using <code>each</code> lets us access each element of the array in the block, but this\nmethod doesn't output anything to the terminal since we aren't using <code>puts</code>.</p>",
-          "weight": 0.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"s2\">\"</span><span class=\"si\">#{</span><span class=\"n\">lunch_item</span><span class=\"si\">}</span><span class=\"s2\">!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
-        },
-        {
-          "id": 1513,
-          "text": "",
-          "comments": "",
-          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
-          "weight": 0.0,
-          "html": "<p>I don't know.</p>"
+          "comments_html": "<p>Sorry, that is incorrect. <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
+          "weight": 100,
+          "blank_id": "answer2"
         }
       ],
       "variables": null,
@@ -258,30 +242,32 @@
       "quiz_group_id": null,
       "assessment_question_id": 521347,
       "position": null,
-      "question_name": "True/False Question",
-      "question_type": "true_false_question",
-      "question_text": "<p>When we run <code>git add .</code>, <strong>all</strong> files that have been created or modified since\nthe last commit are staged and will be included in the next commit.&nbsp;</p>",
+      "question_name": "String Manipulation",
+      "question_type": "multiple_dropdowns_question",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"hi\"</span><span class=\"o\">;</span>\n<span class=\"n\">s1</span><span class=\"o\">.</span><span class=\"na\">toUpperCase</span><span class=\"o\">();</span>\n</code></pre></div>\n<p>What is printed by the following statement?</p>\n\n<p>System.out.println( s1 ); [answer1]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
+          "id": 4304,
+          "text": "hi",
           "comments": "",
-          "comments_html": "<p>Not quite. Be sure to review the <code>.gitignore</code> source for this question. You'll\nget it next time!</p>",
-          "text": "True",
-          "weight": 0,
-          "id": 1016
+          "comments_html": "<p>You are correct! Strings are immutable, so <code>s1.toUpperCase();</code> does not change <code>s1</code>.  The\nupper-cased string returned from the method should be assigned to a variable, such as <code>String upper = s1.toUpperCase();</code>.</p>",
+          "weight": 100.0,
+          "blank_id": "answer1"
         },
         {
+          "id": 410,
+          "text": "HI",
           "comments": "",
-          "comments_html": "",
-          "text": "False",
-          "weight": 100,
-          "id": 3134
+          "comments_html": "<p>Sorry, that is incorrect. Strings are immutable, so <code>s1.toUpperCase();</code> does not change <code>s1</code>.  The\nupper-cased string returned from the method should be assigned to a variable, such as <code>String upper = s1.toUpperCase();</code>.</p>",
+          "weight": 0.0,
+          "blank_id": "answer1"
         }
       ],
       "variables": null,
@@ -297,55 +283,80 @@
       "quiz_group_id": null,
       "assessment_question_id": 521348,
       "position": null,
-      "question_name": "Matching Question",
-      "question_type": "matching_question",
-      "question_text": "<p>Match the term with the correct description.</p>",
+      "question_name": "String Manipulation",
+      "question_type": "multiple_dropdowns_question",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"Wow\"</span><span class=\"o\">;</span>\n\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println( s1.indexOf(\"w\")); [answer1]</p>\n\n<p>System.out.println( s1.indexOf(\"z\") ); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "7483",
-          "text": "Declarative Programming",
-          "left": "Declarative Programming",
-          "right": "Describes what the end result should be, not the specific actions or steps to\nget to that result.",
+          "id": 103,
+          "text": "2",
           "comments": "",
-          "comments_html": "",
-          "match_id": 2265
+          "comments_html": "<p>You are correct! Strings use 0-based indexing and <code>indexOf</code> returns the starting\nindex of lower-case \"w\" at position 2.</p>",
+          "weight": 100.0,
+          "blank_id": "answer1"
         },
         {
-          "id": "8645",
-          "text": "Imperative Programming",
-          "left": "Imperative Programming",
-          "right": "Explicitly describes the specific actions or steps for getting to the end\nresult.",
+          "id": 7712,
+          "text": "0",
           "comments": "",
-          "comments_html": "",
-          "match_id": 8726
+          "comments_html": "<p>Sorry, that is incorrect. Strings use 0-based indexing and <code>indexOf</code> returns the starting\nindex of lower-case \"w\" at position 2.</p>",
+          "weight": 0.0,
+          "blank_id": "answer1"
+        },
+        {
+          "id": 3709,
+          "text": "1",
+          "comments": "",
+          "comments_html": "<p>Sorry, that is incorrect. Strings use 0-based indexing and <code>indexOf</code> returns the starting\nindex of lower-case \"w\" at position 2.</p>",
+          "weight": 0.0,
+          "blank_id": "answer1"
+        },
+        {
+          "id": 2006,
+          "text": "3",
+          "comments": "",
+          "comments_html": "<p>Sorry, that is incorrect. Strings use 0-based indexing and <code>indexOf</code> returns the starting\nindex of lower-case \"w\" at position 2.</p>",
+          "weight": 0.0,
+          "blank_id": "answer1"
+        },
+        {
+          "id": 682,
+          "text": "-1",
+          "comments": "",
+          "comments_html": "<p>You are correct! The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
+          "weight": 100.0,
+          "blank_id": "answer2"
+        },
+        {
+          "id": 8870,
+          "text": "0",
+          "comments": "",
+          "comments_html": "<p>Sorry, that is incorrect. The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
+          "weight": 0.0,
+          "blank_id": "answer2"
+        },
+        {
+          "id": 4190,
+          "text": "null",
+          "comments": "",
+          "comments_html": "<p>Sorry, that is incorrect. The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
+          "weight": 0.0,
+          "blank_id": "answer2"
         }
       ],
       "variables": null,
       "formulas": null,
       "answer_tolerance": null,
       "formula_decimal_places": null,
-      "matches": [
-        {
-          "text": "Describes what the end result should be, not the specific actions or steps to\nget to that result.",
-          "match_id": 2265
-        },
-        {
-          "text": "Explicitly describes the specific actions or steps for getting to the end\nresult.",
-          "match_id": 8726
-        },
-        {
-          "text": "I don't know.",
-          "match_id": 5877
-        }
-      ],
-      "matching_answer_incorrect_matches": "I don't know."
+      "matches": null,
+      "matching_answer_incorrect_matches": null
     },
     {
       "id": 301059,
@@ -353,64 +364,32 @@
       "quiz_group_id": null,
       "assessment_question_id": 521349,
       "position": null,
-      "question_name": "Multiple Dropdowns Question",
-      "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">module</span> <span class=\"nn\">Talk</span>\n  <span class=\"k\">module</span> <span class=\"nn\">Phrases</span>\n    <span class=\"k\">def</span> <span class=\"nf\">hello</span>\n      <span class=\"s2\">\"Hello!\"</span>\n    <span class=\"k\">end</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">goodbye</span>\n      <span class=\"s2\">\"Good bye!\"</span>\n    <span class=\"k\">end</span>\n  <span class=\"k\">end</span>\n\n  <span class=\"k\">module</span> <span class=\"nn\">Teachers</span>\n    <span class=\"k\">def</span> <span class=\"nf\">teach</span>\n      <span class=\"s2\">\"Repeat after me.\"</span>\n    <span class=\"k\">end</span>\n  <span class=\"k\">end</span>\n<span class=\"k\">end</span>\n</code></pre></div>\n<p>The code sample above is an example of [a1] modules. To access the <code>Teachers</code>\nmodule to include it in a class, we would type include [a2].</p>",
+      "question_name": "String Manipulation",
+      "question_type": "fill_in_multiple_blanks_question",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"ABCDEF\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println( s1.substring(4) ); [answer1]</p>\n\n<p>System.out.println( s1.substring(0,3) ); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 5546,
-          "text": "namespaced",
+          "id": 1863,
+          "text": "EF",
           "comments": "",
-          "comments_html": "<p>Correct! Both <code>Teachers</code> and <code>Phrases</code> are namespaced inside of <code>Talk</code>. They\ncan be accessed using <code>::</code>.</p>",
+          "comments_html": "",
           "weight": 100.0,
-          "blank_id": "a1"
+          "blank_id": "answer1"
         },
         {
-          "id": 1884,
-          "text": "subclass inherited",
+          "id": 2837,
+          "text": "ABC",
           "comments": "",
-          "comments_html": "<p>There aren't any classes, nor any subclass inheritance, in the syntax above.\nYou might want to review the resource/s for this question.</p>",
-          "weight": 0.0,
-          "blank_id": "a1"
-        },
-        {
-          "id": 1234,
-          "text": "I don't know",
-          "comments": "",
-          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
-          "weight": 0.0,
-          "blank_id": "a1"
-        },
-        {
-          "id": 5119,
-          "text": "Talk::Teachers",
-          "comments": "",
-          "comments_html": "<p>Correct! To <code>include</code> the <code>Teachers</code> module, we need to access it using <code>::</code>\non the module that contains it.</p>",
+          "comments_html": "",
           "weight": 100.0,
-          "blank_id": "a2"
-        },
-        {
-          "id": 7053,
-          "text": "Teachers::Talk",
-          "comments": "",
-          "comments_html": "<p>When using <code>::</code> to access a nested module, we put the module that contains the\nother module on the left side of the double colon.</p>",
-          "weight": 0.0,
-          "blank_id": "a2"
-        },
-        {
-          "id": 9879,
-          "text": "Talk.Teachers",
-          "comments": "",
-          "comments_html": "<p>Not quite. This looks more like we're trying to call a method on <code>Talk</code>.</p>",
-          "weight": 0.0,
-          "blank_id": "a2"
+          "blank_id": "answer2"
         }
       ],
       "variables": null,
@@ -426,32 +405,40 @@
       "quiz_group_id": null,
       "assessment_question_id": 521350,
       "position": null,
-      "question_name": "Fill in Multiple Blanks Question",
-      "question_type": "fill_in_multiple_blanks_question",
-      "question_text": "<p>In order for Active Record to work, it is necessary to follow the naming\nconventions it is expecting. Specifically, the name of the class must be\n[answer1] and the name of the table must be [answer2].</p>",
+      "question_name": "String Manipulation",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Which expression compiles and evaluates to true?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6676/pages/string-manipulation\">String Manipulation</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 6782,
-          "text": "singular",
+          "id": 3391,
+          "text": "",
+          "html": "<p>s1.toLowerCase().contains(\"app\")</p>",
           "comments": "",
           "comments_html": "",
-          "weight": 100.0,
-          "blank_id": "answer1"
+          "weight": 100.0
         },
         {
-          "id": 142,
-          "text": "plural",
+          "id": 3084,
+          "text": "",
+          "html": "<p>s1.contains(\"apple\") </p>",
           "comments": "",
-          "comments_html": "",
-          "weight": 100.0,
-          "blank_id": "answer2"
+          "comments_html": "<p>The method <code>contains</code> does a case-sensitive substring search</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 3950,
+          "text": "",
+          "html": "<p>s1.contains( \"APP\".toLowerCase() )</p>",
+          "comments": "",
+          "comments_html": "<p>The method <code>contains</code> does a case-sensitive substring search</p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
