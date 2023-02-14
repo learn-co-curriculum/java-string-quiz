@@ -87,7 +87,7 @@
       "quiz_group_id": null,
       "assessment_question_id": 521344,
       "position": null,
-      "question_name": "String Constructors",
+      "question_name": "String Constructors and String Pool",
       "question_type": "multiple_choice_question",
       "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>How many <code>String</code> objects are created?</p>",
       "points_possible": 1.0,
@@ -138,7 +138,7 @@
       "position": null,
       "question_name": "String Equality",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println(color1 == color2); [answer1]</p>\n\n<p>System.out.println(color1 == color3); [answer2]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>Fill in the blank to show the output.</p>\n\n<p>System.out.println(color1 == color2); [answer1]</p>\n\n<p>System.out.println(color1 == color3); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -164,7 +164,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 5649,
+          "id": 7578,
           "text": "true",
           "comments": "",
           "comments_html": "<p>You are correct! <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -172,7 +172,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 3972,
+          "id": 7495,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -195,7 +195,7 @@
       "position": null,
       "question_name": "String Equality",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println(color1.equals(color2)); [answer1]</p>\n\n<p>System.out.println(color1.equals(color3)); [answer2]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">color1</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n<span class=\"nc\">String</span> <span class=\"n\">color2</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">String</span><span class=\"o\">(</span><span class=\"s\">\"red\"</span><span class=\"o\">);</span>\n<span class=\"nc\">String</span> <span class=\"n\">color3</span> <span class=\"o\">=</span> <span class=\"s\">\"red\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>Fill in the blank to show the output.</p>\n\n<p>System.out.println(color1.equals(color2)); [answer1]</p>\n\n<p>System.out.println(color1.equals(color3)); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -221,7 +221,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 5668,
+          "id": 9514,
           "text": "true",
           "comments": "",
           "comments_html": "<p>You are correct! <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -229,7 +229,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 2730,
+          "id": 8690,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -252,7 +252,7 @@
       "position": null,
       "question_name": "String Manipulation",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"hi\"</span><span class=\"o\">;</span>\n<span class=\"n\">s1</span><span class=\"o\">.</span><span class=\"na\">toUpperCase</span><span class=\"o\">();</span>\n</code></pre></div>\n<p>What is printed by the following statement?</p>\n\n<p>System.out.println( s1 ); [answer1]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"hi\"</span><span class=\"o\">;</span>\n<span class=\"n\">s1</span><span class=\"o\">.</span><span class=\"na\">toUpperCase</span><span class=\"o\">();</span>\n</code></pre></div>\n<p>Fill in the blank to show the output.</p>\n\n<p>System.out.println( s1 ); [answer1]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -293,7 +293,7 @@
       "position": null,
       "question_name": "String Manipulation",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"Wow\"</span><span class=\"o\">;</span>\n\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println( s1.indexOf(\"w\")); [answer1]</p>\n\n<p>System.out.println( s1.indexOf(\"z\") ); [answer2]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"Wow\"</span><span class=\"o\">;</span>\n\n</code></pre></div>\n<p>Fill in the blank to show the output.</p>\n\n<p>System.out.println( s1.indexOf(\"w\")); [answer1]</p>\n\n<p>System.out.println( s1.indexOf(\"z\") ); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -343,7 +343,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 5064,
+          "id": 8392,
           "text": "0",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
@@ -374,7 +374,7 @@
       "position": null,
       "question_name": "String Manipulation",
       "question_type": "fill_in_multiple_blanks_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"ABCDEF\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>What is printed by the following statements?</p>\n\n<p>System.out.println( s1.substring(4) ); [answer1]</p>\n\n<p>System.out.println( s1.substring(0,3) ); [answer2]</p>",
+      "question_text": "<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"nc\">String</span> <span class=\"n\">s1</span> <span class=\"o\">=</span> <span class=\"s\">\"ABCDEF\"</span><span class=\"o\">;</span>\n</code></pre></div>\n<p>Fill in the blank to show the output.</p>\n\n<p>System.out.println( s1.substring(4) ); [answer1]</p>\n\n<p>System.out.println( s1.substring(0,3) ); [answer2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -415,7 +415,7 @@
       "position": null,
       "question_name": "String Manipulation",
       "question_type": "multiple_answers_question",
-      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Which expression compiles and evaluates to true? Select all that apply:</p>",
+      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Select all expressions and compile and evaluate to true? </p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -433,7 +433,7 @@
           "html": "<p>s1.toLowerCase().contains(\"app\")</p>"
         },
         {
-          "id": 6419,
+          "id": "6419",
           "text": "",
           "comments": "",
           "comments_html": "<p>The method <code>contains</code> does a case-sensitive substring search</p>",
