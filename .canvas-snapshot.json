@@ -164,7 +164,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 7578,
+          "id": 5910,
           "text": "true",
           "comments": "",
           "comments_html": "<p>You are correct! <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.<br>\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -172,7 +172,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 7495,
+          "id": 8581,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1 == color3</code> tests if the variables reference the same object in memory.\nSince the variables are assigned to the same string literal, Java assigns both to the same object in the string pool.\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -221,7 +221,7 @@
           "blank_id": "answer1"
         },
         {
-          "id": 9514,
+          "id": 4235,
           "text": "true",
           "comments": "",
           "comments_html": "<p>You are correct! <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -229,7 +229,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 8690,
+          "id": 1735,
           "text": "false",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. <code>color1.equals(color3)</code> tests if the strings store the same character sequence \"red\".\n<img src=\"https://curriculum-content.s3.amazonaws.com/6676/java-string/q1.png\" alt=\"q1 objects\"></p>",
@@ -343,7 +343,7 @@
           "blank_id": "answer2"
         },
         {
-          "id": 8392,
+          "id": 6609,
           "text": "0",
           "comments": "",
           "comments_html": "<p>Sorry, that is incorrect. The <code>indexOf</code> method returns <code>-1</code> if the substring is not found.</p>",
@@ -415,7 +415,7 @@
       "position": null,
       "question_name": "String Manipulation",
       "question_type": "multiple_answers_question",
-      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Select all expressions and compile and evaluate to true? </p>",
+      "question_text": "<p>Given this assignment:</p>\n\n<p><code>String s1 = \"Red Apple\";</code></p>\n\n<p>Which expressions evaluate to true?\nSelect all that apply. </p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
